@@ -1,8 +1,9 @@
-# Captomate: Automated Captioning Tool 🎥
+# Captomate: Automated Captioning Tool ![tiktok](https://user-images.githubusercontent.com/74038190/235294002-8aafea24-3179-45af-91d9-412ad7ff5359.gif)
+
 
 NOTE: This was just a hobby project with no proper organized code structure or documentation. I am sharing it in case it might help others. I don't plan on maintaining this repository. 📝
 
-![image](https://github.com/bhushanap/captomate/assets/83635464/45279afa-7bd1-45ff-a5ad-1146a8759d7e)
+![demo_sub](https://github.com/bhushanap/captomate/assets/83635464/e2a6011f-7967-4bc1-8df6-51499e089fcb)
 
 
 ## Use 🚀
