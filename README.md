@@ -29,6 +29,9 @@ You would also need to install [FFMPEG](https://ffmpeg.org/) on your device for 
 
 Here's how to do it for [Ubuntu](https://phoenixnap.com/kb/install-ffmpeg-ubuntu) [Windows](https://www.geeksforgeeks.org/how-to-install-ffmpeg-on-windows/) 🛠️
 
+### Optional
+If you want demo stock footage from youtube, check out [demo](/demo) folder
+
 ## Credits 🛠️
 
 The tool uses a [Gradio](https://www.gradio.app/) frontend. 🖥️
@@ -50,5 +53,7 @@ This should start the gradio interface.
     Running on local URL:  http://127.0.0.1:7860
 
     To create a public link, set `share=True` in `launch()`.
+
+Ctrl + Click on the link or paste it in a browser. This will launch the following interface.
 
 <img src='https://github.com/bhushanap/captomate/assets/83635464/1ae72549-b584-4e3d-9d79-aab8185936cb' height='400'>
