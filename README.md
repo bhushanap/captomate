@@ -5,6 +5,7 @@ NOTE: This was just a hobby project with no proper organized code structure or d
 
 <img src='https://github.com/bhushanap/captomate/assets/83635464/e2a6011f-7967-4bc1-8df6-51499e089fcb' width='250'>
 <img src='https://github.com/bhushanap/captomate/assets/83635464/58b4a583-6ec4-4674-ae7f-6c5bf095e3e4' width='250'>
+<img src='https://github.com/bhushanap/captomate/assets/83635464/da20a464-907e-437d-8c10-86c40cbddb31' width='250'>
 
 
 ## Use 🚀
