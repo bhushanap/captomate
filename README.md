@@ -2,6 +2,9 @@
 
 NOTE: This was just a hobby project with no proper organized code structure or documentation. I am sharing it in case it might help others. I don't plan on maintaining this repository. 📝
 
+![image](https://github.com/bhushanap/captomate/assets/83635464/45279afa-7bd1-45ff-a5ad-1146a8759d7e)
+
+
 ## Use 🚀
 
 Captomate allows you to add captions on videos. It makes tiktok style captioning videos easy. 💬
