@@ -57,3 +57,5 @@ This should start the gradio interface.
 Ctrl + Click on the link or paste it in a browser. This will launch the following interface.
 
 <img src='https://github.com/bhushanap/captomate/assets/83635464/1ae72549-b584-4e3d-9d79-aab8185936cb' height='400'>
+
+For the settings to be set, check the [Wiki](https://github.com/bhushanap/captomate/wiki)
