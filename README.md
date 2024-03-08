@@ -25,6 +25,30 @@ I do not have a bat file for installation on windows, so if anyone can make it, 
 
     . install.sh
 
-You would also need to install FFMPEG on your device for this software to work.
+You would also need to install [FFMPEG](https://ffmpeg.org/) on your device for this software to work.
 
 Here's how to do it for [Ubuntu](https://phoenixnap.com/kb/install-ffmpeg-ubuntu) [Windows](https://www.geeksforgeeks.org/how-to-install-ffmpeg-on-windows/) 🛠️
+
+## Credits 🛠️
+
+The tool uses a [Gradio](https://www.gradio.app/) frontend. 🖥️
+
+[PywhisperCPP](https://github.com/abdeladim-s/pywhispercpp) has been used for auto-captioning. 🤖
+
+[Silero AI](https://github.com/snakers4/silero-models) handles the Text to Speech part. 🗣️
+
+[Pedalboard](https://spotify.github.io/pedalboard) is for some minor audio effects. 🎶
+
+[PyonFX](https://github.com/CoffeeStraw/PyonFX) for generating the caption effects in substation alpha. ✨
+
+## Using the tool
+
+    . run.sh
+
+This should start the gradio interface.
+
+    Running on local URL:  http://127.0.0.1:7860
+
+    To create a public link, set `share=True` in `launch()`.
+
+<img src='https://github.com/bhushanap/captomate/assets/83635464/1ae72549-b584-4e3d-9d79-aab8185936cb' height='400'>
