@@ -37,6 +37,7 @@ Here's how to do it for [Ubuntu](https://phoenixnap.com/kb/install-ffmpeg-ubuntu
 
 ### Optional
 If you want demo stock footage from youtube, check out [demo](/demo) folder
+If you want different fonts for captions, install fonts from the [automate fonts](/automate_fonts) folder in your system.
 
 ## Credits 🛠️
 
