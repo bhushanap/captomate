@@ -3,7 +3,8 @@
 
 NOTE: This was just a hobby project with no proper organized code structure or documentation. I am sharing it in case it might help others. I don't plan on maintaining this repository. 📝
 
-![demo_sub](https://github.com/bhushanap/captomate/assets/83635464/e2a6011f-7967-4bc1-8df6-51499e089fcb)
+<img src='https://github.com/bhushanap/captomate/assets/83635464/e2a6011f-7967-4bc1-8df6-51499e089fcb' width='250'>
+<img src='https://github.com/bhushanap/captomate/assets/83635464/58b4a583-6ec4-4674-ae7f-6c5bf095e3e4' width='250'>
 
 
 ## Use 🚀
