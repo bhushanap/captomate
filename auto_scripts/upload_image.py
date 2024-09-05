@@ -36,6 +36,7 @@ def img2mp4(user, gradio_path, resx, resy):
             'ffmpeg',
             '-loop', '1',
             '-i', destination_path,
+            '-i', audio_file,
             '-c:v', 'libx264',
             '-t', str(audio_duration),
             '-pix_fmt', 'yuv420p',
