@@ -110,12 +110,13 @@ def generate_out(user,gpath):
             yield "Extracted audio from video"
 
     if output_final or output_video:
+        audio_from_video = config_dict.get('audio', {}).get('input', {}) == 'extract'
         if not config_dict.get('video', {}).get('input', {}) is None:
             upload_image_use = config_dict.get('video', {}).get('input', '')[-3:] in ['jpg', 'png']
         else:
             upload_image_use = None
         if upload_image_use:
-            audio_from_video = config_dict.get('audio', {}).get('input', {}) == 'extract'
+            # audio_from_video = config_dict.get('audio', {}).get('input', {}) == 'extract'
             assert upload_image_use != audio_from_video,\
             "You want to use uploaded image for the video background and also want to extract audio from the video. Cannot extract audio from an image input"
             # Accessing values from the dictionary
@@ -128,7 +129,7 @@ def generate_out(user,gpath):
             except Exception as e:
                 raise Exception(e)
             yield "Generated video from image"
-
+        
         if not audio_from_video:
             if not config_dict.get('video', {}).get('input', {}) is None:
                 upload_video_use = config_dict.get('video', {}).get('input', '')[-3:] in ['mp4', 'mkv', 'mov', 'avi']
@@ -210,7 +211,7 @@ def generate_out(user,gpath):
                 try:
                     caption.cc(user)
                 except:
-                    raise Exception('Something seems while generating captions. Please try again :( \n')
+                    raise Exception('Something seems wrong while generating captions. Please try again :( \n')
                 yield "Generated captions"
                 # if tts_use:
                 #     from auto_scripts.fixsrt import replace_words
