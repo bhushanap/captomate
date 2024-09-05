@@ -70,7 +70,7 @@ def trim_mp4_files(user, gradio_path, resx, resy):
         video_duration = subprocess.check_output(['ffprobe', '-i', video_file, '-show_entries', 'format=duration', '-v', 'quiet', '-of', 'csv=p=0'], text=True).strip()
         video_duration = int(float(video_duration))
         # print(video_duration, type(video_duration))
-        start_time = random.randint(0, video_duration-int(float(audio_duration))*speed_factor)
+        start_time = random.randint(0, abs(video_duration-int(float(audio_duration))*speed_factor))
         print(start_time)
         # Run ffmpeg command
         if os.path.exists(audio_file):
