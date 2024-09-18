@@ -32,16 +32,27 @@ def img2mp4(user, gradio_path, resx, resy):
         print('audio duration is ', audio_duration)
         output_video = os.path.join(user,'tmp','video.mp4')
         # Build the ffmpeg command with scaling
-        ffmpeg_command = [
-            'ffmpeg',
-            '-loop', '1',
-            '-i', destination_path,
-            '-i', audio_file,
-            '-c:v', 'libx264',
-            '-t', str(audio_duration),
-            '-pix_fmt', 'yuv420p',
-            output_video
-        ]
+        if os.path.exists(audio_file):
+            ffmpeg_command = [
+                'ffmpeg',
+                '-loop', '1',
+                '-i', destination_path,
+                '-i', audio_file,
+                '-c:v', 'libx264',
+                '-t', str(audio_duration),
+                '-pix_fmt', 'yuv420p',
+                output_video
+            ]
+        else:
+            ffmpeg_command = [
+                'ffmpeg',
+                '-loop', '1',
+                '-i', destination_path,
+                '-c:v', 'libx264',
+                '-t', str(audio_duration),
+                '-pix_fmt', 'yuv420p',
+                output_video
+            ]
 
         subprocess.run(ffmpeg_command)
 

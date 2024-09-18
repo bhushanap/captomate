@@ -272,7 +272,7 @@ def get_preview(radioV,radioA,radioS,vd,yt,res,vid,tts,spk,aud,sub,augment,font,
     params['video']['game']=vd
   
   with open(os.path.join(user,'cfg','config.yml'), 'w') as yaml_file:
-    yaml.dump(params, yaml_file, default_flow_style=True)
+    yaml.dump(params, yaml_file, default_flow_style=False)
 
   print("Dictionary saved as config.yml")
   
