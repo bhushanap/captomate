@@ -72,9 +72,9 @@ def convert(user,path,speaker):
     audio_paths = model.save_wav(ssml_text = f'<speak><break time="1s"/>{example_text}<break time="1s"/></speak>',
                                 speaker=speaker,
                                 sample_rate=sample_rate,
-                                audio_path=os.path.join(user,'tmp','tts.wav'))
+                                audio_path=os.path.join(os.path.dirname(__file__), '..', user,'tmp','tts.wav'))
     
-    with AudioFile(os.path.join(user,'tmp','tts.wav')).resampled_to(sample_rate) as f:
+    with AudioFile(os.path.join(os.path.dirname(__file__), '..', user,'tmp','tts.wav')).resampled_to(sample_rate) as f:
         audio = f.read(f.frames)
 
     # Make a pretty interesting sounding guitar pedalboard:
@@ -90,7 +90,7 @@ def convert(user,path,speaker):
     effected = board(audio, sample_rate)
 
     # Write the audio back as a wav file:
-    with AudioFile(os.path.join(user,'tmp','audio.mp3'), 'w', sample_rate, effected.shape[0]) as f:
+    with AudioFile(os.path.join(os.path.dirname(__file__), '..', user,'tmp','audio.mp3'), 'w', sample_rate, effected.shape[0]) as f:
         f.write(effected)
     # try:
     #     subprocess.run(['ffmpeg', '-i', 'test.wav', '-codec:a', 'libmp3lame', '-qscale:a', '2', 'tmp/audio.mp3'])

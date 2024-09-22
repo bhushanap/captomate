@@ -1,0 +1,42 @@
+audio:
+  input: /home/b/audio.mp3
+  spk: Alice
+  tts: Hello there. How is it going! This is a sample text to speech sentence.
+output:
+  Audio File: false
+  Final Video: true
+  Subtitle File: false
+  Video File: false
+subs:
+  All Caps: false
+  Bold: false
+  Italics: false
+  Strikeout: false
+  Underline: false
+  chars: 8
+  eColor: CCCCFF
+  eScale: '110'
+  effect: pop
+  eoColor: 0338D8
+  font: Arial
+  fontSize: 72
+  input: extract
+  lines: 3
+  oColor: '373743'
+  oSize: 4
+  outline: Outline
+  position: Midway
+  sColor: '111111'
+  sSize: 2
+  shadow: No Shadow
+  tColor: BBBBBB
+  time: 2
+  vSpacing: 1.0
+  words: 3
+video:
+  bright: '50'
+  con: '50'
+  input: /home/b/video.mp4
+  resx: 720
+  resy: 1280
+  sat: '50'

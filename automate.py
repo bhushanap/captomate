@@ -6,10 +6,11 @@ import os
 import shutil
 
 
+
 def generate_out(user,gpath):
 
     
-
+    # user = str(os.path.join(os.path.dirname(__file__),user))
     config_path = os.path.join(user,'cfg','config.yml') # Update this path accordingly
     config_dict = load_yml.load_config(config_path)
 

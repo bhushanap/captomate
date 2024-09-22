@@ -22,6 +22,7 @@ def copy_and_rename_mp3_files(user, gradio_path):
         return True, f"File '{gradio_path}' successfully saved to '{destination_path}'."
 
     except Exception as e:
+        raise Exception(e)
         return False, f"Error: {str(e)}"
 
 

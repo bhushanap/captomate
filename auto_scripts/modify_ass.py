@@ -3,7 +3,7 @@ import re
 import os
 
 def update_resolution(user, filename, new_playresx, new_playresy):
-    with open(filename, 'r', encoding='utf-8') as file:
+    with open(os.path.join(user,'..',filename), 'r', encoding='utf-8') as file:
         content = file.read()
 
     # Define the pattern for matching PlayResX and PlayResY lines
